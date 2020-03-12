@@ -14,9 +14,9 @@ const article = {
 };
 const root = <div className="app">
   <div className="nav">
-  <Nav nav={nav[0]}></Nav>
-  <Nav nav={nav[1]}></Nav>
-  <Nav nav={nav[2]}></Nav>
+  <Nav nav={nav[0]}/>
+  <Nav nav={nav[1]}/>
+  <Nav nav={nav[2]}/>
   </div>
   <div className="articles">
   <Article article={article}></Article>
