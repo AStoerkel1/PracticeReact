@@ -1,8 +1,14 @@
 import React from "react";
-
+import '../App.css';
 class Hello extends React.Component {
   render() {
-    return <div>Hello from hello.js</div>;
+    return <div>
+    <header>
+      <p>
+        Hello {this.props.name}.
+      </p>
+    </header>
+  </div>;
   }
 }
 
