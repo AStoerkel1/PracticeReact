@@ -10,7 +10,14 @@ const article = {
   url: "https://www.nytimes.com/2020/03/12/us/politics/trump-surveillance-bill.html",
   alt: "A photo of president Trump"
 };
-const root = <div>< Article article={article}/><Article article={article}/></div>;
+const root = <div className="app">
+  <div className="nav">
+    <Article article={article}></Article>
+  </div>
+  <div className="articles">
+  <Article article={article}></Article>
+  </div>
+</div>;
 
 ReactDOM.render(root, document.getElementById('root'));
 
