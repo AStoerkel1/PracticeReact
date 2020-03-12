@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import './hello.css';
 class Hello extends React.Component {
   render() {
     return <div>
