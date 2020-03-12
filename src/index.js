@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Hello from './components/hello';
+import Article from './components/article.js';
 import * as serviceWorker from './serviceWorker';
 
-const root = <div>< Hello name="Andrew"/>
-<Hello name="jesse"/></div>;
+const article = {
+  "title": "In Rare Oval Office Speech, Trump Voices New Concerns and Old Themes"
+};
+const root = <div>< Article article={article}/></div>;
 
 ReactDOM.render(root, document.getElementById('root'));
 
