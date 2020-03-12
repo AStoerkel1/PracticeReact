@@ -4,7 +4,9 @@ import './index.css';
 import Hello from './components/hello';
 import * as serviceWorker from './serviceWorker';
 
-const root = < Hello name="Andrew"/>;
+const root = <div>< Hello name="Andrew"/>
+<Hello name="jesse"/></div>;
+
 ReactDOM.render(root, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
