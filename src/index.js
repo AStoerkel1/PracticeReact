@@ -5,7 +5,8 @@ import Article from './components/article.js';
 import * as serviceWorker from './serviceWorker';
 
 const article = {
-  "title": "In Rare Oval Office Speech, Trump Voices New Concerns and Old Themes"
+  "title": "In Rare Oval Office Speech, Trump Voices New Concerns and Old Themes",
+  "thumbnail-standard":  "https://static01.nyt.com/images/2020/03/11/us/politics/11dc-trump-sub1/merlin_170379696_e6d00afa-4a1b-4355-9eb2-876db46a59d1-thumbStandard.jpg"
 };
 const root = <div>< Article article={article}/></div>;
 
