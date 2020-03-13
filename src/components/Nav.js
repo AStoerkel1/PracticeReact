@@ -11,8 +11,7 @@ class Nav extends React.Component {
 
   render () {
     const navIcon = this.props.nav;
-    const imgSrc = this. props.imgSrc;
-    return <button onClick={this.change.bind(this, navIcon)}><img src={imgSrc} />{navIcon}</button>
+    return <button onClick={this.change.bind(this, navIcon)}>{navIcon}</button>
   }
 }
 
