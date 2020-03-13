@@ -5,6 +5,8 @@ import Article from './components/article.js';
 import Nav from './components/Nav.js'
 import * as serviceWorker from './serviceWorker';
 
+
+
 const nav = ["U.S.", "Home", "World", "Science"]
 const article = {
   title: "In Rare Oval Office Speech, Trump Voices New Concerns and Old Themes",
