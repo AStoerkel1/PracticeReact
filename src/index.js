@@ -14,7 +14,6 @@ const article = {
 };
 const root = <div className="app">
   <div className="nav">
-  <button className="navButton"><img src=".\icons8-usa-30.png" alt=""/>{nav[1]}</button>
   <Nav nav={nav[0]}/>
   <Nav nav={nav[1]}/>
   <Nav nav={nav[2]}/>
@@ -25,11 +24,7 @@ const root = <div className="app">
   <Article article={article}></Article>
   <Article article={article}></Article>
   <Article article={article}></Article>
-  <Article article={article}></Article>
-  <Article article={article}></Article>
-  <Article article={article}></Article>
-  <Article article={article}></Article>
-  <Article article={article}></Article>
+  <Article article={article}></Article> 
   </div>
 </div>;
 
