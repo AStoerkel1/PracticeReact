@@ -7,7 +7,8 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-const nav = ["U.S.", "Home", "World", "Science"]
+const nav = ["U.S.", "Home", "World", "Science"];
+const imgSrc = ["src\components\icons8-usa-30.png"];
 const article = {
   title: "In Rare Oval Office Speech, Trump Voices New Concerns and Old Themes",
   thumbnail:  "https://static01.nyt.com/images/2020/03/11/us/politics/11dc-trump-sub1/merlin_170379696_e6d00afa-4a1b-4355-9eb2-876db46a59d1-thumbStandard.jpg",
@@ -16,10 +17,10 @@ const article = {
 };
 const root = <div className="app">
   <div className="nav">
-  <Nav nav={nav[0]}/>
-  <Nav nav={nav[1]}/>
-  <Nav nav={nav[2]}/>
-  <Nav nav={nav[3]}/>
+  <Nav nav={nav[0]} imgSrc={imgSrc[0]}/>
+  <Nav nav={nav[1]} imgSrc={imgSrc[0]}/>
+  <Nav nav={nav[2]} imgSrc={imgSrc[0]}/>
+  <Nav nav={nav[3]} imgSrc={imgSrc[0]}/>
   </div>
   <div className="articles">
   <Article article={article}></Article>

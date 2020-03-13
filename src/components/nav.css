@@ -1,4 +1,6 @@
-.navButton {
+button {
   background-color: #222029;
   color: inherit;
+  border: none;
+  border-bottom: 2px solid #a6a1ca;
 }

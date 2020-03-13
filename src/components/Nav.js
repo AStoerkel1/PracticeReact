@@ -5,16 +5,14 @@ import './nav.css';
 
 class Nav extends React.Component {
 
-
-
-  change = () => {
-    const navIcon = this.props.nav;
-    alert(navIcon);
+  change = (section) => {
+    alert(section);
   }
 
   render () {
     const navIcon = this.props.nav;
-    return <button className="navButton" onClick={this.change}><img src="icons8-usa-30.png" alt=""/>{navIcon}</button>
+    const imgSrc = this. props.imgSrc;
+    return <button onClick={this.change.bind(this, navIcon)}><img src={imgSrc} />{navIcon}</button>
   }
 }
 
