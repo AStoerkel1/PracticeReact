@@ -8,14 +8,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       articles: [],
-      section: "us",
       nav: ["Us", "Arts", "Science", "World", "Health"],
+      section: "Us",
     };
   }
 
  componentDidMount(sec) {
   this.setState({
-    section: sec
+    section: (sec || this.state.nav[0])
   })
     const url = "https://api.nytimes.com/svc/topstories/v2/" + (sec || this.state.section) + ".json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h";
     fetch(url)
