@@ -39,6 +39,7 @@ button {
   color: inherit;
   border: none;
   border-bottom: 2px solid #a6a1ca;
+  border-left: 2px solid #a6a1ca;
   height: 50px;
   border-radius: 5px;
 }

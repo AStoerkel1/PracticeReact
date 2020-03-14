@@ -38,9 +38,12 @@ class App extends React.Component {
       })}
 
       </div>
+     
       <div className="articles">
-
-    <h1>Section: {this.state.section}</h1>
+        <div className="section">
+          <h1>Section: {this.state.section}</h1>
+        </div>
+    
 
       {this.state.articles.map((article) => {
         return <Article article={article}/>
