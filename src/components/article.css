@@ -5,10 +5,8 @@
 }
 
 img {
-  height: 100px;
-  width: 100px;
-  display: block;
-  overflow: scroll;
+  height: 75px;
+  padding: 5px;
 }
 
 a{
@@ -23,4 +21,5 @@ a{
 .article-title {
   font-weight: bold;
   color: inherit;
+  width: 100%;
 }

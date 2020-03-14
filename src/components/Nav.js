@@ -4,9 +4,17 @@ import './nav.css';
 
 
 class Nav extends React.Component {
+  constructor (props) {
+    super(props);
+    this.setState({
+      section: "us"
+    })
+  }
 
-  change = (section) => {
-    alert(section);
+  change(sec){
+    this.setState({
+      section: sec
+    })
   }
 
   render () {
