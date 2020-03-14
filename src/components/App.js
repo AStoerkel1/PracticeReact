@@ -1,6 +1,6 @@
 import React from "react"
 import Article from "./article.js"
-import './nav.css';
+
 
 
 class App extends React.Component {
@@ -40,7 +40,7 @@ class App extends React.Component {
       </div>
       <div className="articles">
 
-    <h1>|Section: {this.state.section}</h1>
+    <h1>Section: {this.state.section}</h1>
 
       {this.state.articles.map((article) => {
         return <Article article={article}/>

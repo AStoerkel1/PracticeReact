@@ -4,6 +4,10 @@
   border-bottom: 2px outset;
   width: 100%;
 }
+.article:hover{
+  color: #3c3a49;
+  background-color: #a6a1ca;
+}
 
 img {
   height: 75px;
