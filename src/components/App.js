@@ -43,10 +43,13 @@ class App extends React.Component {
 
       </div>
       <div className="articles">
+
     <h2>Section {this.state.section}</h2>
+    
       {this.state.articles.map((article) => {
         return <Article article={article}/>
       })}
+
       </div>
     </div>
   }
