@@ -40,7 +40,7 @@ class App extends React.Component {
       </div>
       <div className="articles">
 
-    <h2>Section: {this.state.section}</h2>
+    <h1>|Section: {this.state.section}</h1>
 
       {this.state.articles.map((article) => {
         console.log(this.state.section)

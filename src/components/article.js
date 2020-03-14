@@ -11,8 +11,9 @@ class Article extends React.Component {
     const alt = this.props.article.abstract;
 
     return <div className="article">
+      <a href={url} >
     <div className="article-pic"><img src={photo} alt={alt}/></div><br/>
-    <div className="article-title"><a href={url} >{title}</a></div>
+    <div className="article-title">{title}</div></a>
   </div>;
   }
 }
