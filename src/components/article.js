@@ -7,7 +7,7 @@ class Article extends React.Component {
   render() {
     const title =  this.props.article.title;
     const url = this.props.article.url;
-    const photo = this.props.article.multimedia[0].url;
+    const photo = this.props.article.multimedia[4].url;
     const alt = this.props.article.abstract;
 
     return <div className="article">
