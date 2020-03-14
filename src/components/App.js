@@ -1,5 +1,4 @@
 import React from "react"
-// import ReactDOM from 'react-dom';
 import Article from "./article.js"
 import './nav.css';
 
@@ -10,12 +9,14 @@ class App extends React.Component {
     this.state = {
       articles: [],
       section: "us",
-      nav: ["us", "arts", "home", "science", "world"],
+      nav: ["Us", "Arts", "Science", "World", "Health"],
     };
   }
 
  componentDidMount(sec) {
-   this.change.bind(this, sec);
+  this.setState({
+    section: sec
+  })
     const url = "https://api.nytimes.com/svc/topstories/v2/" + (sec || this.state.section) + ".json?api-key=ajba3SMj5gAAjiZG7WjOXdJ3htyjVE1h";
     fetch(url)
     .then( response => response.json())
@@ -27,11 +28,6 @@ class App extends React.Component {
     })
   }
 
-  change(sec){
-    this.setState({
-      section: sec
-    })
-  }
 
   render() {
     return <div className="app">
@@ -44,9 +40,10 @@ class App extends React.Component {
       </div>
       <div className="articles">
 
-    <h2>Section {this.state.section}</h2>
-    
+    <h2>Section: {this.state.section}</h2>
+
       {this.state.articles.map((article) => {
+        console.log(this.state.section)
         return <Article article={article}/>
       })}
 
