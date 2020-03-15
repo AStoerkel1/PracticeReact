@@ -27,7 +27,9 @@ div {
 }
 
 .articles {
+  display: flex;
   flex-grow: 1;
+  flex-direction: column;
   height: 100vh;
   width: 95%;
   position: sticky;
@@ -39,10 +41,11 @@ button {
   color: inherit;
   font-weight: bold;
   border: none;
-  border-bottom: 2px solid #a6a1ca;
-  border-left: 2px solid #a6a1ca;
+  /* border-bottom: 2px solid #a6a1ca;
+  border-left: 2px solid #a6a1ca; */
   height: 50px;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 button:hover{
