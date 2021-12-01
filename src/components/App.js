@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       articles: [],
-      nav: ["Us", "Arts", "Science", "World", "Health"],
+      nav: ["Us", "Arts", "Science", "Technology", "World", "Health"],
       section: "Us",
     };
   }
@@ -24,7 +24,7 @@ class App extends React.Component {
       let articles = [] 
       for (let i = 0; i<=9; i++){
 	  articles.push(data.results[i])
-	}
+      }
       console.log(articles)
       this.setState({
         articles : articles
