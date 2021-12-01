@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Concept
 
+this is meant to be a clone of the News extension that I wrote using jquery except with React this time. Originally this was supposed to be 
+the production app but I realized that i didn't know how to get it to render in the browser without the server running, so... yeah
+
+## Setup
+
+1.Clone the repo
+
+2.ensure Nodejs and npm installed in the latest version
+
+3. npm start should open the page in the default browser
 ## Available Scripts
 
 In the project directory, you can run:
