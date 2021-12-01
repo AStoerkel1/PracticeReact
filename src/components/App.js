@@ -21,13 +21,16 @@ class App extends React.Component {
     fetch(url)
     .then( response => response.json())
     .then((data) => {
-      console.log(data.results)
+      let articles = [] 
+      for (let i = 0; i<=9; i++){
+	  articles.push(data.results[i])
+	}
+      console.log(articles)
       this.setState({
-        articles : data.results
+        articles : articles
       });
     })
   }
-
 
   render() {
     return <div className="app">
@@ -46,7 +49,7 @@ class App extends React.Component {
     
 
       {this.state.articles.map((article) => {
-        return <Article article={article}/>
+        return ((article.title!=="") ? <Article article={article}/> : null)
       })}
 
       </div>
