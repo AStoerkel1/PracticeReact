@@ -13,7 +13,7 @@ class Article extends React.Component {
 
     return <a href={url} >
   <div className="article">
-    <div className="article-pic"><img src={photo} alt="Not available"/></div><br/>
+    <div className="article-pic"><img src={photo} alt="Not available"/></div>
     <div className="article-title">{title}</div>
   </div>
   </a>;
