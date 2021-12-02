@@ -44,7 +44,7 @@ class App extends React.Component {
      
       <div className="articles">
         <div className="section">
-          <h1>Section: {this.state.section}</h1>
+          <h1>{this.state.section}</h1>
         </div>
     
 
